@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>    Πρόγραμμα συναυλιών
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <META NAME="KEYWORDS" CONTENT="Μουσικά νέα, συνεντεύξεις, κριτικές δίσκων, reviews συναυλιών, πρόγραμμα συναυλιών, μουσικοί διαγωνισμοί, αρθρογραφία, hard rock, metal">
+    <META NAME="DESCRIPTION" CONTENT="    Αναλυτικό πρόγραμμα με όλες τις συναυλίες ανά την Ελλάδα
+">
+            <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+        <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+        <META NAME="LANGUAGE" CONTENT="EL">
+        <!-- Google tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K97P5K1PZF"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-K97P5K1PZF');
+</script>            <link rel="alternate" type="application/atom+xml" title="Rocking.gr" href="https://www.rocking.gr/feed" />
+                    <META property="og:site_name" content="Rocking.gr">
+        <META property="og:url" content="https://www.rocking.gr/agenda">
+    
+    <META property="og:title" content="Πρόγραμμα συναυλιών">
+    <META property="og:description" content="Αναλυτικό πρόγραμμα με όλες τις συναυλίες ανά την Ελλάδα">
+        <META property="og:type" content="article"/>
+    <META property="fb:app_id" content="107614649284729"/>
+                            <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700,700italic,800,800italic&subset=latin,greek' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="https://images.rocking.gr/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="https://images.rocking.gr/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/build/css/all-d3e8e4dd31.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="/build/js/all-5818119faf.js"></script>
+                <!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script type="text/javascript" async=true>
+    (function() {
+        var host = window.location.hostname;
+        var element = document.createElement('script');
+        var firstScript = document.getElementsByTagName('script')[0];
+        var url = 'https://quantcast.mgr.consensu.org'
+            .concat('/choice/', '5ZYZ1P_c4Ehhr', '/', host, '/choice.js')
+        var uspTries = 0;
+        var uspTriesLimit = 3;
+        element.async = true;
+        element.type = 'text/javascript';
+        element.src = url;
+
+        firstScript.parentNode.insertBefore(element, firstScript);
+
+        function makeStub() {
+            var TCF_LOCATOR_NAME = '__tcfapiLocator';
+            var queue = [];
+            var win = window;
+            var cmpFrame;
+
+            function addFrame() {
+                var doc = win.document;
+                var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+                if (!otherCMP) {
+                    if (doc.body) {
+                        var iframe = doc.createElement('iframe');
+
+                        iframe.style.cssText = 'display:none';
+                        iframe.name = TCF_LOCATOR_NAME;
+                        doc.body.appendChild(iframe);
+                    } else {
+                        setTimeout(addFrame, 5);
+                    }
+                }
+                return !otherCMP;
+            }
+
+            function tcfAPIHandler() {
+                var gdprApplies;
+                var args = arguments;
+
+                if (!args.length) {
+                    return queue;
+                } else if (args[0] === 'setGdprApplies') {
+                    if (
+                        args.length > 3 &&
+                        args[2] === 2 &&
+                        typeof args[3] === 'boolean'
+                    ) {
+                        gdprApplies = args[3];
+                        if (typeof args[2] === 'function') {
+                            args[2]('set', true);
+                        }
+                    }
+                } else if (args[0] === 'ping') {
+                    var retr = {
+                        gdprApplies: gdprApplies,
+                        cmpLoaded: false,
+                        cmpStatus: 'stub'
+                    };
+
+                    if (typeof args[2] === 'function') {
+                        args[2](retr);
+                    }
+                } else {
+                    queue.push(args);
+                }
+            }
+
+            function postMessageEventHandler(event) {
+                var msgIsString = typeof event.data === 'string';
+                var json = {};
+
+                try {
+                    if (msgIsString) {
+                        json = JSON.parse(event.data);
+                    } else {
+                        json = event.data;
+                    }
+                } catch (ignore) {}
+
+                var payload = json.__tcfapiCall;
+
+                if (payload) {
+                    window.__tcfapi(
+                        payload.command,
+                        payload.version,
+                        function(retValue, success) {
+                            var returnMsg = {
+                                __tcfapiReturn: {
+                                    returnValue: retValue,
+                                    success: success,
+                                    callId: payload.callId
+                                }
+                            };
+                            if (msgIsString) {
+                                returnMsg = JSON.stringify(returnMsg);
+                            }
+                            event.source.postMessage(returnMsg, '*');
+                        },
+                        payload.parameter
+                    );
+                }
+            }
+
+            while (win) {
+                try {
+                    if (win.frames[TCF_LOCATOR_NAME]) {
+                        cmpFrame = win;
+                        break;
+                    }
+                } catch (ignore) {}
+
+                if (win === window.top) {
+                    break;
+                }
+                win = win.parent;
+            }
+            if (!cmpFrame) {
+                addFrame();
+                win.__tcfapi = tcfAPIHandler;
+                win.addEventListener('message', postMessageEventHandler, false);
+            }
+        };
+
+        makeStub();
+
+        var uspStubFunction = function() {
+            var arg = arguments;
+            if (typeof window.__uspapi !== uspStubFunction) {
+                setTimeout(function() {
+                    if (typeof window.__uspapi !== 'undefined') {
+                        window.__uspapi.apply(window.__uspapi, arg);
+                    }
+                }, 500);
+            }
+        };
+
+        var checkIfUspIsReady = function() {
+            uspTries++;
+            if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+                console.warn('USP is not accessible');
+            } else {
+                clearInterval(uspInterval);
+            }
+        };
+
+        if (typeof window.__uspapi === 'undefined') {
+            window.__uspapi = uspStubFunction;
+            var uspInterval = setInterval(checkIfUspIsReady, 6000);
+        }
+    })();
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->                <script src="https://t.atmng.io/adweb/Dymrg2B0k.prod.js" async></script>
+                <script async src="//pahtuo.tech/c/rocking.js"></script>
+        <script type="text/javascript">
+    window._taboola = window._taboola || [];
+    _taboola.push({article:'auto'});
+    !function (e, f, u, i) {
+        if (!document.getElementById(i)){
+            e.async = 1;
+            e.src = u;
+            e.id = i;
+            f.parentNode.insertBefore(e, f);
+        }
+    }(document.createElement('script'),
+            document.getElementsByTagName('script')[0],
+            '//cdn.taboola.com/libtrc/tdggrrockingrockinggr/loader.js',
+            'tb_loader_script');
+</script>
+    </head>
+
+<body >
+<div id="header">
+    <div class="header-top">
+    <a class="toggler" href="#">
+        <div class="l1"></div>
+        <div class="l2"></div>
+        <div class="l3"></div>
+    </a>
+    <div class="inner clearfix">
+
+        <div class="logo">
+            <a href="/" alt="rocking logo">
+                <img src="https://images.rocking.gr/logo.png" alt="Rocking.gr"/>
+            </a>
+        </div>
+
+        <div class="user">
+            <div class="user-bundle">
+                <a href="https://www.rocking.gr/user/login" class="register-button">Login / Register</a>
+            </div>
+        </div>
+
+        <div class="socials">
+            <ul class="socials-container">
+                                <li id="search-button" class="search"><a href="#">Search</a></li>
+                <li class="fb">
+                    <a rel="nofollow" target="_blank" href="https://www.facebook.com/Rockinggr-215074052892/">Facebook</a>
+                </li>
+                <li class="tw">
+                    <a rel="nofollow" target="_blank" href="https://twitter.com/rockinggr">Twitter</a>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>
+
+    <div class="main-menu">
+    <div class="inner">
+        <ul class="nav clearfix">
+            <li>
+                <a href="/news">ΝΕΑ</a>
+                <div class="submenu">
+                    <div class="submenu-container inner">
+                        <ul class="links">
+                            <li>
+                                <a href="/news">ΟΛΑ</a>
+                            </li>
+                            <li>
+                                <a href="/tags/LiveInGreece/10950">ΣΥΝΑΥΛΙΑΚΑ</a>
+                            </li>
+                            <li>
+                                <a href="/tags/Releases/10952">ΚΥΚΛΟΦΟΡΙΕΣ</a>
+                            </li>
+                            <li>
+                                <a href="/tags/AudioVideo/10951">ΤΡΑΓΟΥΔΙΑ / VIDEO</a>
+                            </li>
+                            <li>
+                                <a href="/tags/Weird/10918">ΠΕΡΙΕΡΓΑ</a>
+                            </li>
+                            <li>
+                                <a href="/tags/Technology/10944">ΤΕΧΝΟΛΟΓΙΑ</a>
+                            </li>
+                        </ul>
+                        <ul class="submenu-articles">
+                                                            <li>
+                                    <a href="https://www.rocking.gr/news/vasilis-papakonstantinou-live-athens-thessaloniki-50-years/41248">
+                                        <img data-src="https://images.rocking.gr/latest/2023/150x150/vasilis-papakonstantinou.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/latest/2023/vasilis-papakonstantinou.jpg';" alt="Μεγάλες συναυλίες για τα 50 χρόνια του Βασίλη Παπακωνσταντίνου στη δισκογραφία" width="150" height="150"  />
+                                        <div class="title">&Mu;&epsilon;&gamma;ά&lambda;&epsilon;&sigmaf; &sigma;&upsilon;&nu;&alpha;&upsilon;&lambda;ί&epsilon;&sigmaf; &gamma;&iota;&alpha; &tau;&alpha; 50 &chi;&rho;ό&nu;&iota;&alpha; &tau;&omicron;&upsilon; &Beta;&alpha;&sigma;ί&lambda;&eta; &Pi;&alpha;&pi;&alpha;&kappa;&omega;&nu;&sigma;&tau;&alpha;&nu;&tau;ί&nu;&omicron;&upsilon; &sigma;&tau;&eta; &delta;&iota;&sigma;&kappa;&omicron;&gamma;&rho;&alpha;&phi;ί&alpha;</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/news/dutch-band-dewolff-break-world-record-rosalita/41733">
+                                        <img data-src="https://images.rocking.gr/latest/2023/150x150/dewolff.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/latest/2023/dewolff.jpg';" alt="Από το στούντιο σε δισκοπωλείο σε τρεις ώρες" width="150" height="150"  />
+                                        <div class="title">&Alpha;&pi;ό &tau;&omicron; &sigma;&tau;&omicron;ύ&nu;&tau;&iota;&omicron; &sigma;&epsilon; &delta;&iota;&sigma;&kappa;&omicron;&pi;&omega;&lambda;&epsilon;ί&omicron; &sigma;&epsilon; &tau;&rho;&epsilon;&iota;&sigmaf; ώ&rho;&epsilon;&sigmaf;</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/news/my-sleeping-karma-drummer-steffen-weigand-died/41728">
+                                        <img data-src="https://images.rocking.gr/latest/2023/150x150/my-sleeping-karma.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/latest/2023/my-sleeping-karma.jpg';" alt="Απεβίωσε ο Steffen των My Sleeping Karma" width="150" height="150"  />
+                                        <div class="title">&Alpha;&pi;&epsilon;&beta;ί&omega;&sigma;&epsilon; &omicron; Steffen &tau;&omega;&nu; My Sleeping Karma</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/news/tommy-karevik-quits-seventh-wonder/41732">
+                                        <img data-src="https://images.rocking.gr/latest/2023/150x150/Tommy_Karevik.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/latest/2023/Tommy_Karevik.jpg';" alt="Αποχώρησε ο Tommy Karevik από τους Seventh Wonder" width="150" height="150"  />
+                                        <div class="title">&Alpha;&pi;&omicron;&chi;ώ&rho;&eta;&sigma;&epsilon; &omicron; Tommy Karevik &alpha;&pi;ό &tau;&omicron;&upsilon;&sigmaf; Seventh Wonder</div>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <a href="/reviews/album">ΚΡΙΤΙΚΕΣ</a>
+                <div class="submenu">
+                    <div class="submenu-container inner">
+                        <ul class="links">
+                            <li>
+                                <a href="/reviews/album">ALBUM</a>
+                            </li>
+                            <li>
+                                <a href="/reviews/songs">ΤΡΑΓΟΥΔΙΑ</a>
+                            </li>
+                            <li>
+                                <a href="/reviews/flashback">FLASHBACK</a>
+                            </li>
+                            <li>
+                                <a href="/undergroundexpress">UNDERGROUND EXPRESS</a>
+                            </li>
+                        </ul>
+                        <ul class="submenu-articles">
+                                                            <li>
+                                    <a href="https://www.rocking.gr/reviews/album/Avkrvst-The-Approbation/11437">
+                                        <img data-src="https://images.rocking.gr/albumcovers/2023/150x150/avkrvst-theapprobation.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/albumcovers/2023/avkrvst-theapprobation.jpg';" alt="Avkrvst - The Approbation" width="150" height="150"  />
+                                        <div class="title">Avkrvst</div>
+                                        <div class="subtitle">The Approbation</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/reviews/album/Drain-Living-Proof/11436">
+                                        <img data-src="https://images.rocking.gr/albumcovers/2023/150x150/drain-livingproof.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/albumcovers/2023/drain-livingproof.jpg';" alt="Drain - Living Proof" width="150" height="150"  />
+                                        <div class="title">Drain</div>
+                                        <div class="subtitle">Living Proof</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/reviews/album/Okwaho-The-Usurper-Regime/11433">
+                                        <img data-src="https://images.rocking.gr/albumcovers/2023/150x150/okwaho-theusurperregime.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/albumcovers/2023/okwaho-theusurperregime.jpg';" alt="Okwaho - The Usurper Regime" width="150" height="150"  />
+                                        <div class="title">Okwaho</div>
+                                        <div class="subtitle">The Usurper Regime</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/reviews/album/Swans-The-Beggar/11434">
+                                        <img data-src="https://images.rocking.gr/albumcovers/2023/150x150/swans-thebeggar.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/albumcovers/2023/swans-thebeggar.jpg';" alt="Swans - The Beggar" width="150" height="150"  />
+                                        <div class="title">Swans</div>
+                                        <div class="subtitle">The Beggar</div>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/agenda">ΣΥΝΑΥΛΙΕΣ</a>
+                <div class="submenu">
+                    <div class="submenu-container inner">
+                        <ul class="links">
+                            <li>
+                                <a href="/live">ΑΝΤΑΠΟΚΡΙΣΕΙΣ</a>
+                            </li>
+                            <li>
+                                <a href="/agenda">ΠΡΟΓΡΑΜΜΑ</a>
+                            </li>
+                        </ul>
+                        <ul class="submenu-articles">
+                                                            <li>
+                                    <a href="https://www.rocking.gr/live/agnostic-front-against-all-adds-xeesistenciax-an-club-1306223/41737">
+                                        <img data-src="https://images.rocking.gr/gigs/2023/150x150/agnosticfront-cover.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/gigs/2023/agnosticfront-cover.jpg';" alt="Agnostic Front, Against All Odds, xResistenciaX @ An Club, 13/06/23" width="150" height="150"  />
+                                        <div class="title">Agnostic Front, Against All Odds, xResistenciaX @ An Club, 13/06/23</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/live/swans-norman-westberg-theatro-braxwn-110623/41727">
+                                        <img data-src="https://images.rocking.gr/gigs/2023/swans/150x150/swans-cover.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/gigs/2023/swans/swans-cover.jpg';" alt="Swans, Norman Westberg @ Θέατρο Βράχων, 11/06/23" width="150" height="150"  />
+                                        <div class="title">Swans, Norman Westberg @ &Theta;έ&alpha;&tau;&rho;&omicron; &Beta;&rho;ά&chi;&omega;&nu;, 11/06/23</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/live/Clutch-Planet-Of-Zeus-live-se-Athina-kai-Thessaloniki-13-140713/16757">
+                                        <img data-src="https://images.rocking.gr/gigs/2013/clutch/150x150/clutch-cover.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/gigs/2013/clutch/clutch-cover.jpg';" alt="Clutch, Planet Of Zeus live σε Αθήνα και Θεσσαλονίκη, 13-14/07/13" width="150" height="150"  />
+                                        <div class="title">Clutch, Planet Of Zeus live &sigma;&epsilon; &Alpha;&theta;ή&nu;&alpha; &kappa;&alpha;&iota; &Theta;&epsilon;&sigma;&sigma;&alpha;&lambda;&omicron;&nu;ί&kappa;&eta;, 13-14/07/13</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/live/release-athens-nightwish-in-flames-insomnium-elysion-plateia-neroy-070623/41707">
+                                        <img data-src="https://images.rocking.gr/gigs/2023/releaseday1/150x150/releaseday1-cover.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/gigs/2023/releaseday1/releaseday1-cover.jpg';" alt="Release Athens (Nightwish, In Flames, Insomnium, Elysion) @ Πλατεία Νερού, 07/06/23" width="150" height="150"  />
+                                        <div class="title">Release Athens (Nightwish, In Flames, Insomnium, Elysion) @ &Pi;&lambda;&alpha;&tau;&epsilon;ί&alpha; &Nu;&epsilon;&rho;&omicron;ύ, 07/06/23</div>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/interviews">ΣΥΝΕΝΤΕΥΞΕΙΣ</a>
+                <div class="submenu">
+                    <div class="submenu-container inner">
+                        <ul class="links">
+                            <li>
+                                <a href="/interviews">ΣΥΝΕΝΤΕΥΞΕΙΣ</a>
+                            </li>
+                        </ul>
+                        <ul class="submenu-articles">
+                                                            <li>
+                                    <a href="https://www.rocking.gr/interviews/adrestia/41736">
+                                        <img data-src="https://images.rocking.gr/interviews/2023/150x150/adrestia-cover.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/interviews/2023/adrestia-cover.jpg';" alt="Adrestia: &quot;The ideas that are promoted within the punk community work for real&quot;" width="150" height="150"  />
+                                        <div class="title">Adrestia: &quot;The ideas that are promoted within the punk community work for real&quot;</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/interviews/adrestia/41735">
+                                        <img data-src="https://images.rocking.gr/interviews/2023/150x150/adrestia-cover.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/interviews/2023/adrestia-cover.jpg';" alt="Adrestia: «Οι ιδέες που προπαγανδίζονται εντός της punk κοινότητας δουλεύουν»" width="150" height="150"  />
+                                        <div class="title">Adrestia: &laquo;&Omicron;&iota; &iota;&delta;έ&epsilon;&sigmaf; &pi;&omicron;&upsilon; &pi;&rho;&omicron;&pi;&alpha;&gamma;&alpha;&nu;&delta;ί&zeta;&omicron;&nu;&tau;&alpha;&iota; &epsilon;&nu;&tau;ό&sigmaf; &tau;&eta;&sigmaf; punk &kappa;&omicron;&iota;&nu;ό&tau;&eta;&tau;&alpha;&sigmaf; &delta;&omicron;&upsilon;&lambda;&epsilon;ύ&omicron;&upsilon;&nu;&raquo;</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/interviews/rival-sons/41723">
+                                        <img data-src="https://images.rocking.gr/interviews/2023/150x150/rivalsons-cover.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/interviews/2023/rivalsons-cover.jpg';" alt="Rival Sons: «Οι περισσότερες μπάντες μάλλον δε θα έπρεπε να παίζουν rock»" width="150" height="150"  />
+                                        <div class="title">Rival Sons: &laquo;&Omicron;&iota; &pi;&epsilon;&rho;&iota;&sigma;&sigma;ό&tau;&epsilon;&rho;&epsilon;&sigmaf; &mu;&pi;ά&nu;&tau;&epsilon;&sigmaf; &mu;ά&lambda;&lambda;&omicron;&nu; &delta;&epsilon; &theta;&alpha; έ&pi;&rho;&epsilon;&pi;&epsilon; &nu;&alpha; &pi;&alpha;ί&zeta;&omicron;&upsilon;&nu; rock&raquo;</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/interviews/Sunenteuksi_Anwrimoi/6671">
+                                        <img data-src="https://images.rocking.gr/interviews/2009/150x150/anorimoi8.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/interviews/2009/anorimoi8.jpg';" alt="Συνέντευξη: Ανώριμοι" width="150" height="150"  />
+                                        <div class="title">&Sigma;&upsilon;&nu;έ&nu;&tau;&epsilon;&upsilon;&xi;&eta;: &Alpha;&nu;ώ&rho;&iota;&mu;&omicron;&iota;</div>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/10">ΛΙΣΤΕΣ / ΑΦΙΕΡΩΜΑΤΑ</a>
+                <div class="submenu">
+                    <div class="submenu-container inner">
+                        <ul class="links">
+                            <li>
+                                <a href="/10">10</a>
+                            </li>
+                            <li>
+                                <a href="/guides">ΟΔΗΓΟΙ</a>
+                            </li>
+                            <li>
+                                <a href="/timemachine">ΧΡΟΝΟΜΗΧΑΝΗ</a>
+                            </li>
+                            <li>
+                                <a href="/highfidelity">ΑΛΜΠΟΥΜ ΤΟΥ ΜΗΝΑ</a>
+                            </li>
+                            <li>
+                                <a href="/cine">CINE</a>
+                            </li>
+                            <li>
+                                <a href="/progsession">PROGSESSION</a>
+                            </li>
+                        </ul>
+                        <ul class="submenu-articles">
+                                                            <li>
+                                    <a href="https://www.rocking.gr/guides/buyers-guide-king-diamond/34730">
+                                        <img data-src="https://images.rocking.gr/articles/2019/150x150/kingdiamond--cover.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/articles/2019/kingdiamond--cover.jpg';" alt="«A Buyer's Guide»: King Diamond" width="150" height="150"  />
+                                        <div class="title">&laquo;A Buyer&#039;s Guide&raquo;: King Diamond</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/progsession/blackwater-park/31744">
+                                        <img data-src="https://images.rocking.gr/progsession/2018/150x150/progsession44-cover.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/progsession/2018/progsession44-cover.jpg';" alt="ProgSession #44: Blackwater Park" width="150" height="150"  />
+                                        <div class="title">ProgSession #44: Blackwater Park</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/progsession/Captain-Beyond/31480">
+                                        <img data-src="https://images.rocking.gr/progsession/2017/150x150/progsession42-cover.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/progsession/2017/progsession42-cover.jpg';" alt="ProgSession #42: Captain Beyond" width="150" height="150"  />
+                                        <div class="title">ProgSession #42: Captain Beyond</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/guides/A-Beginner%5C%5Cs-Guide-Nu-metal/17572">
+                                        <img data-src="https://images.rocking.gr/articles/2013/150x150/numetal-cover.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/articles/2013/numetal-cover.jpg';" alt="«A Beginner's Guide»: Nu Metal" width="150" height="150"  />
+                                        <div class="title">&laquo;A Beginner&#039;s Guide&raquo;: Nu Metal</div>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/answermachine">ΑΠΟΨΕΙΣ</a>
+                <div class="submenu">
+                    <div class="submenu-container inner">
+                        <ul class="links">
+                                                        <li>
+                                <a href="/articles">ΑΡΘΡΟΓΡΑΦΙΑ</a>
+                            </li>
+                            <li>
+                                <a href="/answermachine">THE ANSWER MACHINE</a>
+                            </li>
+                            <li>
+                                <a href="/rockculture">ROCK CULTURE</a>
+                            </li>
+                            <li>
+                                <a href="/noise">THE NOISE IN MY HEAD</a>
+                            </li>
+                                                        <li>
+                                <a href="/footnotes">FOOTNOTES</a>
+                            </li>
+                            <li>
+                                <a href="/enterpagan">TO ENTER PAGAN</a>
+                            </li>
+                        </ul>
+                        <ul class="submenu-articles">
+                                                            <li>
+                                    <a href="https://www.rocking.gr/articles/21_diaskeues_Bob_Dylan_pou_aksizei_na_akousete/3918">
+                                        <img data-src="https://images.rocking.gr/articles/2007/150x150/dylan.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/articles/2007/dylan.jpg';" alt="21 διασκευές Bob Dylan που αξίζει να ακούσετε" width="150" height="150"  />
+                                        <div class="title">21 &delta;&iota;&alpha;&sigma;&kappa;&epsilon;&upsilon;έ&sigmaf; Bob Dylan &pi;&omicron;&upsilon; &alpha;&xi;ί&zeta;&epsilon;&iota; &nu;&alpha; &alpha;&kappa;&omicron;ύ&sigma;&epsilon;&tau;&epsilon;</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/articles/Aerosmith_-_Bad_Boys_From_Boston/7677">
+                                        <img data-src="https://images.rocking.gr/afieromata/2010/150x150/aerosmith15.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/afieromata/2010/aerosmith15.jpg';" alt="Aerosmith - Bad Boys From Boston" width="150" height="150"  />
+                                        <div class="title">Aerosmith - Bad Boys From Boston</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/articles/jazz-albums/39667">
+                                        <img data-src="https://images.rocking.gr/articles/2022/150x150/jazzsabbath-cover.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/articles/2022/jazzsabbath-cover.jpg';" alt="Τα πέντε jazz άλμπουμ που κάθε μεταλλάς πρέπει να ακούσει πριν πεθάνει" width="150" height="150"  />
+                                        <div class="title">&Tau;&alpha; &pi;έ&nu;&tau;&epsilon; jazz ά&lambda;&mu;&pi;&omicron;&upsilon;&mu; &pi;&omicron;&upsilon; &kappa;ά&theta;&epsilon; &mu;&epsilon;&tau;&alpha;&lambda;&lambda;ά&sigmaf; &pi;&rho;έ&pi;&epsilon;&iota; &nu;&alpha; &alpha;&kappa;&omicron;ύ&sigma;&epsilon;&iota; &pi;&rho;&iota;&nu; &pi;&epsilon;&theta;ά&nu;&epsilon;&iota;</div>
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="https://www.rocking.gr/noise/I-rock--metal-mousiki-koinotita-arneitai-na-paiksei-to-paixnidi-tou-dixasmou/24943">
+                                        <img data-src="https://images.rocking.gr/opinions/2015/150x150/noiseinmyhead-20.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/opinions/2015/noiseinmyhead-20.jpg';" alt="Η rock / metal μουσική κοινότητα αρνείται να παίξει το παιχνίδι του διχασμού" width="150" height="150"  />
+                                        <div class="title">&Eta; rock / metal &mu;&omicron;&upsilon;&sigma;&iota;&kappa;ή &kappa;&omicron;&iota;&nu;ό&tau;&eta;&tau;&alpha; &alpha;&rho;&nu;&epsilon;ί&tau;&alpha;&iota; &nu;&alpha; &pi;&alpha;ί&xi;&epsilon;&iota; &tau;&omicron; &pi;&alpha;&iota;&chi;&nu;ί&delta;&iota; &tau;&omicron;&upsilon; &delta;&iota;&chi;&alpha;&sigma;&mu;&omicron;ύ</div>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="https://forum.rocking.gr" target="_blank">FORUM</a>
+            </li>
+                    </ul>
+    </div>
+</div>
+     <div class="sticky-menu">
+    <div class="inner clearfix">
+        <div class="logo-small">
+            <a href="/">
+
+            </a>
+        </div>
+        <a href="#" class="burger-icon"><img src="https://images.rocking.gr/sub-nav_02.png" class="image-on-off" alt="icon"></a>
+        <div class="links">
+            <ul>
+                <li><a href="/news">ΝΕΑ</a></li>
+                <li><a href="/reviews/album">ΚΡΙΤΙΚΕΣ</a></li>
+                <li><a href="/interviews">ΣΥΝΕΝΤΕΥΞΕΙΣ</a></li>
+                <li><a href="/agenda">ΣΥΝΑΥΛΙΕΣ</a></li>
+                <li><a href="/live">ΑΝΤΑΠΟΚΡΙΣΕΙΣ</a></li>
+                <li><a href="http://forum.rocking.gr" target="_blank">FORUM</a>
+                                    </li>
+                
+            </ul>
+        </div>
+        <div class="bar-title">    Πρόγραμμα συναυλιών
+</div>
+        <div class="share"></div>
+
+    </div>
+</div></div>
+<span class="loading-indicator half"></span>
+
+<div id="main" class="">
+        <div class="inner inner_full_width">
+        
+
+        <div class="main_featured events">
+    <div class="inner">
+        <div class="left">
+                        <a href="https://www.rocking.gr/agenda/2023/7/27/25454">
+                                <img src="https://images.rocking.gr/latest/2023/812x500/t.s.o.l..jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/latest/2023/t.s.o.l..jpg';" alt="T.S.O.L."  />
+                <div class="text-on-image">
+                                        <div class="title-subtitle">
+                        <div class="title">T.S.O.L.</div>
+                        <div class="subtitle">&Pi;έ&mu;&pi;&tau;&eta;, 27 &Iota;&omicron;&upsilon;&lambda;ί&omicron;&upsilon; 2023 @ AN Club, &Alpha;&theta;ή&nu;&alpha;</div>
+                    </div>
+                </div>
+            </a>
+                    </div>
+        <div class="right">
+            <div class="item">
+                                <a href="https://www.rocking.gr/agenda/2023/6/24/25365">
+                                        <img src="https://images.rocking.gr/latest/2023/418x249/converge.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/latest/2023/converge.jpg';" alt="Converge"  />
+                    <div class="text-on-image">
+                                                <div class="title-subtitle">
+                            <div class="title">Converge</div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+            <div class="item">
+                                <a href="https://www.rocking.gr/agenda/2023/6/30/25460">
+                                        <img src="https://images.rocking.gr/latest/2022/418x249/imperial_triumphant.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/latest/2022/imperial_triumphant.jpg';" alt="Imperial Triumphant"  />
+                    <div class="text-on-image">
+                                                <div class="title-subtitle">
+                            <div class="title">Imperial Triumphant</div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+        </div>
+        <div class="clearfix"></div>
+            </div>
+</div>
+    <div class="content-header clearfix">
+        <div class="inner">
+            <div class="title-wrap">
+                <div class="title"><img src="https://images.rocking.gr/icon-r.png"><span>ΠΡΟΓΡΑΜΜΑ ΣΥΝΑΥΛΙΩΝ</span></div>
+            </div>
+            <div class="view-icons">
+                <div class="list-view active"><a href="https://www.rocking.gr/agenda/view/list"><p>LIST</p></a></div>
+                                 <div class="grid-view "><a href="https://www.rocking.gr/agenda/view/calendar"><p>CALENDAR</p></a></div>
+                            </div>
+
+            <div class="row clearfix">
+                <div class="event-months">
+                    <ul>
+                        <li class="calendar-icon with-border"></li>
+                                                    <li class="with-border"><a href="https://www.rocking.gr/agenda/2023/6" class="">&Iota;&omicron;ύ&nu;&iota;&omicron;&sigmaf;</a></li>
+                                                    <li class="with-border"><a href="https://www.rocking.gr/agenda/2023/7" class="">&Iota;&omicron;ύ&lambda;&iota;&omicron;&sigmaf;</a></li>
+                                                    <li class="with-border"><a href="https://www.rocking.gr/agenda/2023/8" class="">&Alpha;ύ&gamma;&omicron;&upsilon;&sigma;&tau;&omicron;&sigmaf;</a></li>
+                                                    <li class="with-border"><a href="https://www.rocking.gr/agenda/2023/9" class="">&Sigma;&epsilon;&pi;&tau;έ&mu;&beta;&rho;&iota;&omicron;&sigmaf;</a></li>
+                                                    <li class="with-border"><a href="https://www.rocking.gr/agenda/2023/10" class="">&Omicron;&kappa;&tau;ώ&beta;&rho;&iota;&omicron;&sigmaf;</a></li>
+                                                    <li class="with-border"><a href="https://www.rocking.gr/agenda/2023/11" class="">&Nu;&omicron;έ&mu;&beta;&rho;&iota;&omicron;&sigmaf;</a></li>
+                                                    <li class="with-border"><a href="https://www.rocking.gr/agenda/2023/12" class="">&Delta;&epsilon;&kappa;έ&mu;&beta;&rho;&iota;&omicron;&sigmaf;</a></li>
+                                                    <li class="with-border"><a href="https://www.rocking.gr/agenda/2024/4" class="">&Alpha;&pi;&rho;ί&lambda;&iota;&omicron;&sigmaf;</a></li>
+                                            </ul>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="event-cities">
+                    <ul>
+                        <li class="marker-icon with-border"></li>
+                                                    <li class="with-border"><a href="https://www.rocking.gr/agenda/athens" class="">&Alpha;&theta;ή&nu;&alpha;</a></li>
+                                                    <li class="with-border"><a href="https://www.rocking.gr/agenda/thessaloniki" class="">&Theta;&epsilon;&sigma;&sigma;&alpha;&lambda;&omicron;&nu;ί&kappa;&eta;</a></li>
+                                                    <li class="with-border"><a href="https://www.rocking.gr/agenda/patra" class="">&Pi;ά&tau;&rho;&alpha;</a></li>
+                                                    <li class="with-border"><a href="https://www.rocking.gr/agenda/rest" class="">&Upsilon;&pi;. &Epsilon;&lambda;&lambda;ά&delta;&alpha;</a></li>
+                                            </ul>
+                </div>
+                            </div>
+        </div>
+    </div> <!--End view menu-->
+
+    <div style="clear:both;"></div>
+
+    <div class="main-content events-main with-side clearfix">
+
+        <div class="inner">
+
+            <div class="banner-top">
+                                 
+    
+        <div id="sas_80262" class="banner_970"></div>
+
+</div>
+            <div class="content">
+
+                
+        
+        
+        <div class="date-box">
+            <h2>14 &Iota;&omicron;&upsilon;&nu;ί&omicron;&upsilon; 2023</h2>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/14/25449">
+                            <div class="groups">&Beta;&alpha;&sigma;ί&lambda;&eta;&sigmaf; &Pi;&alpha;&pi;&alpha;&kappa;&omega;&nu;&sigma;&tau;&alpha;&nu;&tau;ί&nu;&omicron;&upsilon;: 50 &Chi;&rho;ό&nu;&iota;&alpha;</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Kappa;&alpha;&lambda;&lambda;&iota;&mu;ά&rho;&mu;&alpha;&rho;&omicron;</div>
+                            <small>&Alpha;&pi;ό 9 e</small>
+                        </a>
+                    </div>
+                </div>
+                    </div> <!--End content box-->
+            
+        
+        <div class="date-box">
+            <h2>16 &Iota;&omicron;&upsilon;&nu;ί&omicron;&upsilon; 2023</h2>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/16/25505">
+                            <div class="groups">Nightstalker, Fundracar, Bad Habits</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Tau;&epsilon;&chi;&nu;ό&pi;&omicron;&lambda;&eta; &Delta;ή&mu;&omicron;&upsilon; &Alpha;&theta;&eta;&nu;&alpha;ί&omega;&nu;</div>
+                            <small>12, 14 e / 17 e</small>
+                        </a>
+                    </div>
+                </div>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/16/25540">
+                            <div class="groups">&Pi;&upsilon;&xi; &Lambda;&alpha;&xi;</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Theta;&epsilon;&sigma;&sigma;&alpha;&lambda;&omicron;&nu;ί&kappa;&eta; @ &Theta;έ&alpha;&tau;&rho;&omicron; &Kappa;ή&pi;&omicron;&upsilon;</div>
+                            <small>13 e, 15 e</small>
+                        </a>
+                    </div>
+                </div>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/16/25574">
+                            <div class="groups">&Alpha;&lambda;&kappa;ί&nu;&omicron;&omicron;&sigmaf; &Iota;&omega;&alpha;&nu;&nu;ί&delta;&eta;&sigmaf;</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Theta;έ&alpha;&tau;&rho;&omicron; &Beta;&rho;&iota;&lambda;&eta;&sigma;&sigma;ί&omega;&nu; &laquo;&Nu;&tau;&alpha;&mu;ά&rho;&iota; - &Alpha;&lambda;ί&kappa;&eta; &Beta;&omicron;&upsilon;&gamma;&iota;&omicron;&upsilon;&kappa;&lambda;ά&kappa;&eta;&raquo;</div>
+                            <small>18 e / 22 e</small>
+                        </a>
+                    </div>
+                </div>
+                    </div> <!--End content box-->
+            
+        
+        <div class="date-box">
+            <h2>17 &Iota;&omicron;&upsilon;&nu;ί&omicron;&upsilon; 2023</h2>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/17/25254">
+                            <div class="groups">Release Athens 2023: Helloween, Jinjer, Beyond The Black, Silent Winter</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Pi;&lambda;&alpha;&tau;&epsilon;ί&alpha; &Nu;&epsilon;&rho;&omicron;ύ, &Omicron;&lambda;&upsilon;&mu;&pi;&iota;&alpha;&kappa;ό&sigmaf; &Pi;ό&lambda;&omicron;&sigmaf; &Phi;&alpha;&lambda;ή&rho;&omicron;&upsilon;</div>
+                            <small>&Alpha;&pi;ό 45 e</small>
+                        </a>
+                    </div>
+                </div>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/17/25611">
+                            <div class="groups">Junkheart, &Sigma;&tau;&rho;ά&phi;&iota;, Bankai</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Theta;&epsilon;&sigma;&sigma;&alpha;&lambda;&omicron;&nu;ί&kappa;&eta; @ Eightball</div>
+                            <small>8 e / 10 e</small>
+                        </a>
+                    </div>
+                </div>
+                    </div> <!--End content box-->
+            
+        
+        <div class="date-box">
+            <h2>19 &Iota;&omicron;&upsilon;&nu;ί&omicron;&upsilon; 2023</h2>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/19/25524">
+                            <div class="groups">John Cale</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Omega;&delta;&epsilon;ί&omicron; &Eta;&rho;ώ&delta;&omicron;&upsilon; &tau;&omicron;&upsilon; &Alpha;&tau;&tau;&iota;&kappa;&omicron;ύ</div>
+                            <small>&Alpha;&pi;ό 35 e</small>
+                        </a>
+                    </div>
+                </div>
+                    </div> <!--End content box-->
+            
+        
+        <div class="date-box">
+            <h2>20 &Iota;&omicron;&upsilon;&nu;ί&omicron;&upsilon; 2023</h2>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/20/25420">
+                            <div class="groups">Release Athens x SNF Nostos 2023: Rosalia &kappa;.&alpha;.</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Pi;&lambda;&alpha;&tau;&epsilon;ί&alpha; &Nu;&epsilon;&rho;&omicron;ύ, &Omicron;&lambda;&upsilon;&mu;&pi;&iota;&alpha;&kappa;ό&sigmaf; &Pi;ό&lambda;&omicron;&sigmaf; &Phi;&alpha;&lambda;ή&rho;&omicron;&upsilon;</div>
+                            <small>&Alpha;&pi;ό 45 e</small>
+                        </a>
+                    </div>
+                </div>
+                    </div> <!--End content box-->
+            
+        
+        <div class="date-box">
+            <h2>21 &Iota;&omicron;&upsilon;&nu;ί&omicron;&upsilon; 2023</h2>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/21/25419">
+                            <div class="groups">Release Athens x SNF Nostos 2023: R&ouml;yksopp, Tash Sultana &kappa;.&alpha;.</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Pi;&lambda;&alpha;&tau;&epsilon;ί&alpha; &Nu;&epsilon;&rho;&omicron;ύ, &Omicron;&lambda;&upsilon;&mu;&pi;&iota;&alpha;&kappa;ό&sigmaf; &Pi;ό&lambda;&omicron;&sigmaf; &Phi;&alpha;&lambda;ή&rho;&omicron;&upsilon;</div>
+                            <small>&Alpha;&pi;ό 30 e</small>
+                        </a>
+                    </div>
+                </div>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/21/25451">
+                            <div class="groups">&Beta;&alpha;&sigma;ί&lambda;&eta;&sigmaf; &Pi;&alpha;&pi;&alpha;&kappa;&omega;&nu;&sigma;&tau;&alpha;&nu;&tau;ί&nu;&omicron;&upsilon;: 50 &Chi;&rho;ό&nu;&iota;&alpha;</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Theta;&epsilon;&sigma;&sigma;&alpha;&lambda;&omicron;&nu;ί&kappa;&eta; @ &Kappa;&alpha;&upsilon;&tau;&alpha;&tau;&zeta;ό&gamma;&lambda;&epsilon;&iota;&omicron; &Sigma;&tau;ά&delta;&iota;&omicron;</div>
+                            <small>&Alpha;&pi;ό 9 e</small>
+                        </a>
+                    </div>
+                </div>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/21/25618">
+                            <div class="groups">&Theta;&alpha;&nu;ά&sigma;&eta;&sigmaf; &Pi;&alpha;&pi;&alpha;&kappa;&omega;&nu;&sigma;&tau;&alpha;&nu;&tau;ί&nu;&omicron;&upsilon;</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Gamma;ή&pi;&epsilon;&delta;&omicron; &Rho;&iota;&zeta;&omicron;ύ&pi;&omicron;&lambda;&eta;&sigmaf;</div>
+                            <small>15 e</small>
+                        </a>
+                    </div>
+                </div>
+                    </div> <!--End content box-->
+            
+        
+        <div class="date-box">
+            <h2>22 &Iota;&omicron;&upsilon;&nu;ί&omicron;&upsilon; 2023</h2>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/22/25521">
+                            <div class="groups">The Waterboys</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Omega;&delta;&epsilon;ί&omicron; &Eta;&rho;ώ&delta;&omicron;&upsilon; &tau;&omicron;&upsilon; &Alpha;&tau;&tau;&iota;&kappa;&omicron;ύ</div>
+                            <small>&Alpha;&pi;ό 30 e</small>
+                        </a>
+                    </div>
+                </div>
+                    </div> <!--End content box-->
+            
+        
+        <div class="date-box">
+            <h2>23 &Iota;&omicron;&upsilon;&nu;ί&omicron;&upsilon; 2023</h2>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/23/25416">
+                            <div class="groups">Release Athens x SNF Nostos 2023: Siouxsie + Interpol &kappa;.&alpha;.</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Pi;&lambda;&alpha;&tau;&epsilon;ί&alpha; &Nu;&epsilon;&rho;&omicron;ύ, &Omicron;&lambda;&upsilon;&mu;&pi;&iota;&alpha;&kappa;ό&sigmaf; &Pi;ό&lambda;&omicron;&sigmaf; &Phi;&alpha;&lambda;ή&rho;&omicron;&upsilon;</div>
+                            <small>&Alpha;&pi;ό 30 e</small>
+                        </a>
+                    </div>
+                </div>
+                    </div> <!--End content box-->
+            
+        
+        <div class="date-box">
+            <h2>24 &Iota;&omicron;&upsilon;&nu;ί&omicron;&upsilon; 2023</h2>
+                            <div id="event-block" class=featured>
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/24/25365">
+                            <div class="groups">Converge</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ Gagarin 205</div>
+                            <small>31 e</small>
+                        </a>
+                    </div>
+                </div>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/24/25573">
+                            <div class="groups">Gregory Porter</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Omega;&delta;&epsilon;ί&omicron; &Eta;&rho;ώ&delta;&omicron;&upsilon; &tau;&omicron;&upsilon; &Alpha;&tau;&tau;&iota;&kappa;&omicron;ύ</div>
+                            <small>&Alpha;&pi;ό 25 e</small>
+                        </a>
+                    </div>
+                </div>
+                    </div> <!--End content box-->
+            
+        
+        <div class="date-box">
+            <h2>25 &Iota;&omicron;&upsilon;&nu;ί&omicron;&upsilon; 2023</h2>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/25/25433">
+                            <div class="groups">Release Athens: Madrugada, Wet Leg &kappa;.&alpha;.</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Pi;&lambda;&alpha;&tau;&epsilon;ί&alpha; &Nu;&epsilon;&rho;&omicron;ύ, &Omicron;&lambda;&upsilon;&mu;&pi;&iota;&alpha;&kappa;ό&sigmaf; &Pi;ό&lambda;&omicron;&sigmaf; &Phi;&alpha;&lambda;ή&rho;&omicron;&upsilon;</div>
+                            <small>&Alpha;&pi;ό 45 e</small>
+                        </a>
+                    </div>
+                </div>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/25/25459">
+                            <div class="groups">Athens Rocks: Ghost, Rotting Christ, Candlemass, Typhus</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Omicron;.&Alpha;.&Kappa;.&Alpha;. (&Epsilon;&xi;&omega;&tau;&epsilon;&rho;&iota;&kappa;ό&sigmaf; &chi;ώ&rho;&omicron;&sigmaf;)</div>
+                            <small>&Alpha;&pi;ό 52 e</small>
+                        </a>
+                    </div>
+                </div>
+                    </div> <!--End content box-->
+            
+        
+        <div class="date-box">
+            <h2>26 &Iota;&omicron;&upsilon;&nu;ί&omicron;&upsilon; 2023</h2>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/26/25426">
+                            <div class="groups">Release Athens: Disturbed, Bullet For My Valentine, Nova Twins &kappa;.&alpha;.</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Pi;&lambda;&alpha;&tau;&epsilon;ί&alpha; &Nu;&epsilon;&rho;&omicron;ύ, &Omicron;&lambda;&upsilon;&mu;&pi;&iota;&alpha;&kappa;ό&sigmaf; &Pi;ό&lambda;&omicron;&sigmaf; &Phi;&alpha;&lambda;ή&rho;&omicron;&upsilon;</div>
+                            <small>&Alpha;&pi;ό 40&euro;</small>
+                        </a>
+                    </div>
+                </div>
+                    </div> <!--End content box-->
+            
+        
+        <div class="date-box">
+            <h2>27 &Iota;&omicron;&upsilon;&nu;ί&omicron;&upsilon; 2023</h2>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/27/25429">
+                            <div class="groups">Release Athens: Parkway Drive, Soulfly, Triptykon &kappa;.&alpha;.</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Pi;&lambda;&alpha;&tau;&epsilon;ί&alpha; &Nu;&epsilon;&rho;&omicron;ύ, &Omicron;&lambda;&upsilon;&mu;&pi;&iota;&alpha;&kappa;ό&sigmaf; &Pi;ό&lambda;&omicron;&sigmaf; &Phi;&alpha;&lambda;ή&rho;&omicron;&upsilon;</div>
+                            <small>&Alpha;&pi;ό 40 e</small>
+                        </a>
+                    </div>
+                </div>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/27/25522">
+                            <div class="groups">Sigur Ros </div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Omega;&delta;&epsilon;ί&omicron; &Eta;&rho;ώ&delta;&omicron;&upsilon; &tau;&omicron;&upsilon; &Alpha;&tau;&tau;&iota;&kappa;&omicron;ύ</div>
+                            <small>&Alpha;&pi;ό 35 e</small>
+                        </a>
+                    </div>
+                </div>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/27/25549">
+                            <div class="groups">Tom Odell</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Tau;&epsilon;&chi;&nu;ό&pi;&omicron;&lambda;&eta; &Delta;ή&mu;&omicron;&upsilon; &Alpha;&theta;&eta;&nu;&alpha;ί&omega;&nu;</div>
+                            <small>&Alpha;&pi;ό 45 e</small>
+                        </a>
+                    </div>
+                </div>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/27/25617">
+                            <div class="groups">&Theta;&alpha;&nu;ά&sigma;&eta;&sigmaf; &Pi;&alpha;&pi;&alpha;&kappa;&omega;&nu;&sigma;&tau;&alpha;&nu;&tau;ί&nu;&omicron;&upsilon;</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Pi;ά&tau;&rho;&alpha; @ Royal Theater</div>
+                            <small>15 e</small>
+                        </a>
+                    </div>
+                </div>
+                    </div> <!--End content box-->
+            
+        
+        <div class="date-box">
+            <h2>28 &Iota;&omicron;&upsilon;&nu;ί&omicron;&upsilon; 2023</h2>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/28/25439">
+                            <div class="groups">Release Athens: Amon Amarth, Kreator, Heaven Shall Burn, Bleed From Within &kappa;.&alpha;.</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ &Pi;&lambda;&alpha;&tau;&epsilon;ί&alpha; &Nu;&epsilon;&rho;&omicron;ύ, &Omicron;&lambda;&upsilon;&mu;&pi;&iota;&alpha;&kappa;ό&sigmaf; &Pi;ό&lambda;&omicron;&sigmaf; &Phi;&alpha;&lambda;ή&rho;&omicron;&upsilon;</div>
+                            <small>&Alpha;&pi;ό 40 e</small>
+                        </a>
+                    </div>
+                </div>
+                    </div> <!--End content box-->
+            
+        
+        <div class="date-box">
+            <h2>29 &Iota;&omicron;&upsilon;&nu;ί&omicron;&upsilon; 2023</h2>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/29/25603">
+                            <div class="groups">Nightstalker, Vodka Juniors, Embargo</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Theta;&epsilon;&sigma;&sigma;&alpha;&lambda;&omicron;&nu;ί&kappa;&eta; @ &Theta;έ&alpha;&tau;&rho;&omicron; &Kappa;ή&pi;&omicron;&upsilon;</div>
+                            <small>11, 13 e / 15 e</small>
+                        </a>
+                    </div>
+                </div>
+                    </div> <!--End content box-->
+            
+        
+        <div class="date-box">
+            <h2>30 &Iota;&omicron;&upsilon;&nu;ί&omicron;&upsilon; 2023</h2>
+                            <div id="event-block" class=featured>
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/30/25460">
+                            <div class="groups">Imperial Triumphant</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ Temple Athens</div>
+                            <small>23, 25 e</small>
+                        </a>
+                    </div>
+                </div>
+                            <div id="event-block" >
+                    <div class="info">
+                        <a href="https://www.rocking.gr/agenda/2023/6/30/25615">
+                            <div class="groups">The Tiger Lillies: Best Of Tour</div>
+                            <div class="sm-line"></div>
+                            <div class="city_venue">&Alpha;&theta;ή&nu;&alpha; @ Faliro Summer Theater</div>
+                            <small>&Alpha;&pi;ό 15 e</small>
+                        </a>
+                    </div>
+                </div>
+                    </div> <!--End content box-->
+            
+
+            </div>
+            <div class="sidebar">
+
+                <div class="block">
+                                         <div id="sas_80261" class="banner300"></div>
+                                    </div>
+
+                
+                <div class="block featured">
+                    <div class="header"><span class="icon"></span><span class="title">ROCKING FEATURED</span></div>
+                                            <div class="fitem">
+                            <img data-src="https://images.rocking.gr/articles/2022/322x188/top30-cover.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/articles/2022/top30-cover.jpg';" alt="Τα καλύτερα άλμπουμ του 2022"  />
+                            <a href="https://www.rocking.gr/timemachine/top30-albums-2022/40922" class="ftitle">&Tau;&alpha; &kappa;&alpha;&lambda;ύ&tau;&epsilon;&rho;&alpha; ά&lambda;&mu;&pi;&omicron;&upsilon;&mu; &tau;&omicron;&upsilon; 2022</a>
+                        </div>
+                                            <div class="fitem">
+                            <img data-src="https://images.rocking.gr/articles/2023/322x188/may-albumofthemonth.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/articles/2023/may-albumofthemonth.jpg';" alt="Μάιος 2023: Το άλμπουμ του μήνα"  />
+                            <a href="https://www.rocking.gr/highfidelity/may-2023-album-of-the-month/41665" class="ftitle">&Mu;ά&iota;&omicron;&sigmaf; 2023: &Tau;&omicron; ά&lambda;&mu;&pi;&omicron;&upsilon;&mu; &tau;&omicron;&upsilon; &mu;ή&nu;&alpha;</a>
+                        </div>
+                                            <div class="fitem">
+                            <img data-src="https://images.rocking.gr/articles/2023/322x188/may-playlists-cover.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/articles/2023/may-playlists-cover.jpg';" alt="Rocking Playlists: Μάιος 2023"  />
+                            <a href="https://www.rocking.gr/highfidelity/playlists-may-2023/41670" class="ftitle">Rocking Playlists: &Mu;ά&iota;&omicron;&sigmaf; 2023</a>
+                        </div>
+                                            <div class="fitem">
+                            <img data-src="https://images.rocking.gr/articles/2022/322x188/underground-cover.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/articles/2022/underground-cover.jpg';" alt="To Rocking επιλέγει τις «υπόγειες» κυκλοφορίες του 2022"  />
+                            <a href="https://www.rocking.gr/timemachine/best-underground-albums-2022/41080" class="ftitle">To Rocking &epsilon;&pi;&iota;&lambda;έ&gamma;&epsilon;&iota; &tau;&iota;&sigmaf; &laquo;&upsilon;&pi;ό&gamma;&epsilon;&iota;&epsilon;&sigmaf;&raquo; &kappa;&upsilon;&kappa;&lambda;&omicron;&phi;&omicron;&rho;ί&epsilon;&sigmaf; &tau;&omicron;&upsilon; 2022</a>
+                        </div>
+                                            <div class="fitem">
+                            <img data-src="https://images.rocking.gr/articles/2022/322x188/bestsongs2022-cover.jpg" onError="this.onerror=null;this.src='https://images.rocking.gr/articles/2022/bestsongs2022-cover.jpg';" alt="2022: Τα 100+1 καλύτερα τραγούδια"  />
+                            <a href="https://www.rocking.gr/timemachine/best-songs-2022/41092" class="ftitle">2022: &Tau;&alpha; 100+1 &kappa;&alpha;&lambda;ύ&tau;&epsilon;&rho;&alpha; &tau;&rho;&alpha;&gamma;&omicron;ύ&delta;&iota;&alpha;</a>
+                        </div>
+                                    </div>
+                <div class="block">
+                                         <div id="sas_80264" class="banner300"></div>
+                                    </div>
+                <div class="block">
+                                         <div id="sas_80265" class="banner300"></div>
+                                    </div>
+
+                <div class="block" id="facebook-block-sidebar">
+    <div style="margin:10% 0;" class="fb-page" data-href="https://www.facebook.com/Rockinggr-215074052892" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-tabs="timeline" data-width="400" data-height="600">
+        <blockquote cite="https://www.facebook.com/Rockinggr-215074052892/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Rockinggr-215074052892/">Rocking.gr</a></blockquote>
+    </div>
+</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+</div>
+<div id="footer">
+    <div class="footer-top">
+        <div class="inner">
+            <span class="r-icon"></span>
+            <ul class="f-nav clearfix">
+                <li class="news">
+                    <a href="/news">NEA</a>
+                    <ul class="childnav">
+                        <li><a href="/tags/LiveInGreece/10950">ΣΥΝΑΥΛΙΑΚΑ</a></li>
+                        <li><a href="/tags/Releases/10952">ΚΥΚΛΟΦΟΡΙΕΣ</a></li>
+                        <li><a href="/tags/AudioVideo/10951">ΤΡΑΓΟΥΔΙΑ / VIDEO</a></li>
+                        <li><a href="/tags/Weird/10918">ΠΕΡΙΕΡΓΑ</a></li>
+                        <li><a href="/tags/Technology/10944">ΤΕΧΝΟΛΟΓΙΑ</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/reviews/album">ΚΡΙΤΙΚΕΣ</a>
+                    <ul class="childnav">
+                        <li><a href="/reviews/album">ALBUM</a></li>
+                        <li><a href="/reviews/songs">SONGS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/agenda">ΣΥΝΑΥΛΙΕΣ</a>
+                    <ul class="childnav">
+                        <li><a href="/live">ΑΝΤΑΠΟΚΡΙΣΕΙΣ</a></li>
+                        <li><a href="/agenda">ΠΡΟΓΡΑΜΜΑ</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/interviews">ΣΥΝΕΝΤΕΥΞΕΙΣ</a>
+                                    </li>
+                <li>
+                    <a href="">ΛΙΣΤΕΣ / ΑΦΙΕΡΩΜΑΤΑ</a>
+                    <ul class="childnav">
+                        <li><a href="/10">10</a></li>
+                        <li><a href="/guides">ΟΔΗΓΟΙ</a></li>
+                        <li><a href="/articles">ΑΡΘΡΟΓΡΑΦΙΑ</a></li>
+                        <li><a href="/timemachine">ΧΡΟΝΟΜΗΧΑΝΗ</a></li>
+                        <li><a href="/reviews/flashback">FLASHBACK</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">ΑΠΟΨΕΙΣ</a>
+                    <ul class="childnav">
+                        <li><a href="/editorial">EDITORIAL</a></li>
+                        <li><a href="/noise">THE NOISE IN MY HEAD</a></li>
+                        <li><a href="/picknroll">IT'S ONLY PICK 'N' ROLL</a></li>
+                        <li><a href="/footnotes">FOOTNOTES</a></li>
+                        <li><a href="/rockculture">ROCK CULTURE</a></li>
+                        <li><a href="/answermachine">THE ANSWER MACHINE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://forum.rocking.gr">FORUM</a>
+                </li>
+            </ul>
+            <div class="subscription">
+                <form action="https://rocking.us3.list-manage.com/subscribe/post?u=87c639d6a2372285341eaa264&amp;id=d266215a63" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <input type="email" name="EMAIL" class="required email" id="email" placeholder="Το e-mail σας">
+                    <input type="submit" value="Εγγραφή στο newsletter" name="subscribe" id="subscribe" class="button">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+    <div class="footer-copy">
+        <div class="inner">
+            <a href="" alt="rocking.gr" class="f-logo"></a>
+            <div class="copy">COPYRIGHT © ROCKING.GR 2002 - 2018, ALL RIGHTS RESERVED</div>
+        </div>
+    </div>
+    <div class="footer-terms">
+        <div class="inner">
+            <ul>
+                                <li><a href="/contact">ΤΑΥΤΟΤΗΤΑ - ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                <li class="f-fb"><a href="https://www.facebook.com/Rockinggr-215074052892/" rel="nofollow">FACEBOOK</a></li>
+                <li class="f-tw"><a href="https://twitter.com/rockinggr" rel="nofollow">TWITTER</a></li>
+                <li><a href="">ΟΡΟΙ ΚΑΙ ΠΡΟΥΠΟΘΕΣΕΙΣ</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+ 
+<div id="search_popup">
+    <div class="search_header">
+        <div class="search_icon">
+            <img src="https://images.rocking.gr/search-icon-popup.png" />
+        </div>
+        <div class="search_logo">
+            <img src="https://images.rocking.gr/logo-search-popup.png" alt="Rocking.gr" />
+        </div>
+        <div class="close_icon">
+            <a id="close-search-popup" href=""><img src="https://images.rocking.gr/close-icon.png" /></a>
+        </div>
+    </div>
+    <div class="search_input">
+        <form action="https://www.rocking.gr/search/json" method="post" role="form" data-pjax>
+            <!-- CSRF Token -->
+            <input type="hidden" name="_token" value="s7FBbPfmUgQqhfrz5TMtJGgAlztkvlZJkgzy8DSK" />
+            <input id="search_query" type="text" name="q" placeholder="τι ψάχνετε;"/>
+        </form>
+    </div>
+    <div class="search_gotoresults">
+        <a name="searchresultslink" href="searchresults">ΟΛΑ ΤΑ ΑΠΟΤΕΛΕΣΜΑΤΑ &#10095;</a>
+    </div>
+    <div id="search_results" class="search_results"></div>
+    <div class="search_gotoresults">
+        <a name="searchresultslink" href="searchresults">ΟΛΑ ΤΑ ΑΠΟΤΕΛΕΣΜΑΤΑ &#10095;</a>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+
+        var thread = null;
+
+        $('#search_query').keyup(function(e) {
+            if(e.which != 27) { // '27' = esc key, we have binded it to slideUp, so we don't listen for it
+                clearTimeout(thread);
+                var $this = $(this);
+                thread = setTimeout(function () {
+                    getResults($this.val())
+                }, 1000);
+            }
+        }).keydown(function(e) {
+            if (e.which == 13) { // '13' = enter, we prevent default action (submitting form, even if there is no submit button)
+                e.preventDefault();
+            }
+        });
+
+        function getResults(t) {
+            //alert(t);
+            // process the form
+            $.ajax({
+                type: 'POST', // define the type of HTTP verb we want to use (POST for our form)
+                url: 'https://www.rocking.gr/search/json', // the url where we want to POST
+                data: {'q':t}, // our data object
+                dataType: 'html', // what type of data do we expect back from the server
+                encode: true
+            })
+                // using the done promise callback
+                    .done(function(data) {
+                        //alert(data.message);
+                        //$('#search_query').blur();
+                        $('#search_results').html(data);
+                        $("a[name='searchresultslink']").attr('href', '/search?q='+t);
+                        $('.search_gotoresults').show();
+                    })
+                    // here we will handle errors and validation messages
+                    .fail(function(jqXHR, textStatus, errorThrown) {
+                        alert( "Request failed: " + textStatus + errorThrown );
+                    });
+        }
+
+    });
+</script>
+                <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0&appId=107614649284729&autoLogAppEvents=1" nonce="KT0wgPPj"></script>        
+
+<script type="text/javascript">
+    $.ajaxSetup({
+        headers: { 'X-CSRF-Token' : 's7FBbPfmUgQqhfrz5TMtJGgAlztkvlZJkgzy8DSK' }
+    });
+</script>
+
+
+<div id="sas_81171" class=""></div>
+      <div id="sas_80266" class=""></div>
+
+</body>
+
+</html>
